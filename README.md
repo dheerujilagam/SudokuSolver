@@ -1,7 +1,7 @@
 # Sudoku Solver Web Application
 
 
-![Sudoku Solver](demo)
+![Sudoku Solver](demo.jpg)
 sample image
 
 ## Description
