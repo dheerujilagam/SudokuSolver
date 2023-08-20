@@ -31,10 +31,6 @@ The main HTML file that contains the structure of the Sudoku Solver web applicat
 
 The CSS file that contains the styling for the web application. It defines the layout, colors, and appearance of the Sudoku board, buttons, timer, and pop-up notifications.
 
-### responsive.css
-
-The CSS file that provides additional styles to ensure the web application is responsive and looks good on different devices and screen sizes.
-
 ### script.js
 
 The JavaScript file that handles the logic and functionality of the Sudoku Solver web application. It generates Sudoku puzzles, validates user input, solves the puzzle, and displays the success pop-up notification.
