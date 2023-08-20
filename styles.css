@@ -19,12 +19,11 @@ h1 {
   color: #333;
 }
 
-/* Sudoku Board */
+/* Responsive Sudoku Board */
 .sudoku-board {
   display: grid;
-  grid-template-columns: repeat(9, 40px);
-  grid-template-rows: repeat(9, 40px);
-  gap: 1px;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 2px;
   margin: 20px auto;
   background-color: #ccc;
   border: 1px solid #999;
@@ -33,8 +32,9 @@ h1 {
 }
 
 .cell {
-  width: 40px;
   height: 40px;
+  width: 100%;
+  padding: 0;
   text-align: center;
   vertical-align: middle;
   font-size: 20px;
@@ -96,4 +96,22 @@ button:active {
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   z-index: 999;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 550px) {
+  .sudoku-board {
+    grid-template-columns: repeat(9, 32px);
+    grid-template-rows: repeat(9, 32px);
+  }
+  
+  .cell {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .timer {
+    font-size: 20px;
+  }
 }
